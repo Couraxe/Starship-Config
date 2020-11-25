@@ -1,0 +1,19 @@
+add_newline = false
+
+format = """
+()$username[@](bold fg:172) $hostname in $directory[λ](bold fg:purple) """
+
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold red)"
+disabled = false
+
+[status]
+disabled = false
